@@ -23,9 +23,9 @@ export default function Home({ exploreData, cardsData }) {
 
           {/* Pull some data from a server - API endpoints*/}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-            {exploreData?.map((item) => (
+            {exploreData?.map((item, id) => (
               <SmallCard
-                key={item}
+                key={id}
                 img={item.img}
                 distance={item.distance}
                 location={item.location}
@@ -48,7 +48,7 @@ export default function Home({ exploreData, cardsData }) {
         </section>
 
         <LargeCard
-          img="https://links.papareact.com/"
+          img="https://images.contentstack.io/v3/assets/bltfa2cefdbe7482368/blt3e5f0646ea372553/5f73919b419b304ab54c42d6/GoNear_Denver_2580w.jpg?width=1390&quality=85&disable=upscale"
           title="The Greatest Outdoors"
           description="Wishlists curated by Airbnb."
           buttonText="Get Inspired"
