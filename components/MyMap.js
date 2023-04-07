@@ -21,7 +21,7 @@ function MyMap({ searchResults }) {
 
   return (
     <Map
-      mapboxAccessToken={process.env.mapbox_key}
+      mapboxAccessToken={process.env.NEXT_PUBLIC_MAPBOX_API_KEY}
       // mapboxAccessToken={MAPBOX_TOKEN}
       {...viewState}
       style={{ width: "100%", height: "100%" }}
